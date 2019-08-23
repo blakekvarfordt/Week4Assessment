@@ -13,6 +13,9 @@
 		639852A4231037530015A46B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 639852A2231037530015A46B /* LaunchScreen.storyboard */; };
 		639852A7231037530015A46B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 639852A6231037530015A46B /* main.m */; };
 		639852B4231038310015A46B /* BTKMovie.m in Sources */ = {isa = PBXBuildFile; fileRef = 639852B3231038310015A46B /* BTKMovie.m */; };
+		639852B723103EAA0015A46B /* BTKMovieController.m in Sources */ = {isa = PBXBuildFile; fileRef = 639852B623103EAA0015A46B /* BTKMovieController.m */; };
+		639852BA231048E30015A46B /* BTKMovieTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639852B9231048E30015A46B /* BTKMovieTableViewController.swift */; };
+		639852BC231050EB0015A46B /* BTKMovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639852BB231050EB0015A46B /* BTKMovieTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,11 @@
 		639852A6231037530015A46B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		639852B2231038310015A46B /* BTKMovie.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTKMovie.h; sourceTree = "<group>"; };
 		639852B3231038310015A46B /* BTKMovie.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTKMovie.m; sourceTree = "<group>"; };
+		639852B523103EAA0015A46B /* BTKMovieController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTKMovieController.h; sourceTree = "<group>"; };
+		639852B623103EAA0015A46B /* BTKMovieController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTKMovieController.m; sourceTree = "<group>"; };
+		639852B8231048E20015A46B /* Week4Assessment-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Week4Assessment-Bridging-Header.h"; sourceTree = "<group>"; };
+		639852B9231048E30015A46B /* BTKMovieTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTKMovieTableViewController.swift; sourceTree = "<group>"; };
+		639852BB231050EB0015A46B /* BTKMovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTKMovieTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +101,8 @@
 		639852AF231037FA0015A46B /* ModelController */ = {
 			isa = PBXGroup;
 			children = (
+				639852B523103EAA0015A46B /* BTKMovieController.h */,
+				639852B623103EAA0015A46B /* BTKMovieController.m */,
 			);
 			path = ModelController;
 			sourceTree = "<group>";
@@ -100,6 +110,8 @@
 		639852B0231038010015A46B /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				639852B9231048E30015A46B /* BTKMovieTableViewController.swift */,
+				639852B8231048E20015A46B /* Week4Assessment-Bridging-Header.h */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -107,6 +119,7 @@
 		639852B1231038090015A46B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				639852BB231050EB0015A46B /* BTKMovieTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -142,6 +155,7 @@
 				TargetAttributes = {
 					63985293231037520015A46B = {
 						CreatedOnToolsVersion = 10.3;
+						LastSwiftMigration = 1030;
 					};
 				};
 			};
@@ -181,7 +195,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				639852B723103EAA0015A46B /* BTKMovieController.m in Sources */,
 				639852A7231037530015A46B /* main.m in Sources */,
+				639852BC231050EB0015A46B /* BTKMovieTableViewCell.swift in Sources */,
+				639852BA231048E30015A46B /* BTKMovieTableViewController.swift in Sources */,
 				63985299231037520015A46B /* AppDelegate.m in Sources */,
 				639852B4231038310015A46B /* BTKMovie.m in Sources */,
 			);
@@ -325,6 +342,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 83YG3ZQCH4;
 				INFOPLIST_FILE = "$(SRCROOT)/Week4Assessment/Resources/Info.plist";
@@ -334,6 +352,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.blakekvarfordt.Week4Assessment;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Week4Assessment/ViewController/Week4Assessment-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -342,6 +363,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 83YG3ZQCH4;
 				INFOPLIST_FILE = "$(SRCROOT)/Week4Assessment/Resources/Info.plist";
@@ -351,6 +373,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.blakekvarfordt.Week4Assessment;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Week4Assessment/ViewController/Week4Assessment-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
