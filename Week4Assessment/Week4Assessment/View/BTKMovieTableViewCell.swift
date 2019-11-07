@@ -12,6 +12,7 @@ class BTKMovieTableViewCell: UITableViewCell {
 
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var ratingLabel: UILabel!
+    @IBOutlet weak var overviewLabel: UILabel!
     @IBOutlet weak var movieImageView: UIImageView!
     
     var movie: BTKMovie? {
@@ -28,6 +29,7 @@ class BTKMovieTableViewCell: UITableViewCell {
         
         titleLabel.text = movie.title
         ratingLabel.text = "\(movie.rating)"
+        overviewLabel.text = movie.overview
 //        movieImageView.image = movie.image
         
     }

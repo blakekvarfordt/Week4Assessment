@@ -10,7 +10,7 @@
 
 @implementation BTKMovie
 
-- (instancetype)initWithTitle:(NSString *)title rating:(NSNumber *)rating //image:(UIImage *)image
+- (instancetype)initWithTitle:(NSString *)title rating:(NSNumber *)rating overview:(NSString *)overview //image:(UIImage *)image
 {
     self = [self init];
     
@@ -18,6 +18,7 @@
     {
         _title = title;
         _rating = rating;
+        _overview = overview;
 //        _image = image;
     }
     
@@ -28,10 +29,11 @@
 - (instancetype)initWithDictionary:(NSDictionary<NSString *,id> *)dictionary
 {
     NSString *title = dictionary[@"title"];
-    NSNumber *rating = dictionary[@"vote_averate"];
+    NSNumber *rating = dictionary[@"vote_average"];
+    NSString *overview = dictionary[@"overview"];
     //UIImage *image =    dictionary[@"poster_path"];
     
-    return [self initWithTitle:title rating:rating]; //image:image];
+    return [self initWithTitle:title rating:rating overview:overview]; //image:image];
 }
 
 @end

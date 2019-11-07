@@ -56,10 +56,9 @@ class BTKMovieTableViewController: UITableViewController, UISearchBarDelegate {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "MovieCell", for: indexPath) as? BTKMovieTableViewCell else { return UITableViewCell() }
 
         
-        let movies = self.movies[indexPath.row]
+        let movie = self.movies[indexPath.row]
         
-        cell.titleLabel.text = movies.title
-        cell.ratingLabel.text = "\(movies.rating)"
+        cell.movie = movie
 //        cell.imageView?.image = movies.image
 
         return cell
